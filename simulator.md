@@ -3,14 +3,18 @@ layout: default
 title: Aircraft Emissions Simulator
 ---
 
-# Aircraft Emissions Simulator (MATLAB)
+# Aircraft Performance & Emissions Simulator
+*Tools: MATLAB, Numerical Integration (RK4)*
 
-### Project Overview
-This project models the fuel burn and CO2 output of a business jet during a standard cruise profile.
+## Executive Summary
+I developed a flight-cycle simulator to quantify the reduction in carbon emissions when transitioning from Jet-A1 to Sustainable Aviation Fuel (SAF) on a long-range business jet platform.
 
-### Technical Approach
-*   **Thermodynamics:** Applied the Brayton Cycle to model engine efficiency.
-*   **Math:** Used a 4th-order Runge-Kutta method to solve for fuel mass flow over time.
+## Technical Implementation
+The model solves the following energy balance for a quasi-steady climb and cruise:
+$$T = D + W \sin(\gamma)$$
 
-### Why this matters for Bombardier
-By optimizing the cruise altitude and Mach number, we can identify "sweet spots" for Sustainable Aviation Fuel (SAF) usage.
+I implemented an LU decomposition to solve for aerodynamic coefficients and used MATLAB's `ode45` to track mass depletion over a 3,000 nautical mile mission.
+
+## Key Findings
+* Switching to 100% SAF resulted in a net lifecycle CO2 reduction of **80%**.
+* Optimized cruise altitudes for the model aircraft were found to be between 41,000 and 45,000 ft.
