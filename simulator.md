@@ -1,5 +1,11 @@
+---
+layout: default
+title: Aircraft Performance Simulator
+---
+
 # Aircraft Performance & Emissions Simulator
 *Tools: MATLAB, Numerical Integration (RK4)*
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/claire-m-richardson/portfolio/blob/main/sustainable_aircraft_sim.ipynb)
 
 ## Executive Summary
 I developed a flight-cycle simulator to quantify the reduction in carbon emissions when transitioning from Jet-A1 to Sustainable Aviation Fuel (SAF) on a long-range business jet platform.
